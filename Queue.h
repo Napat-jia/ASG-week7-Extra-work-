@@ -27,11 +27,10 @@ int dequeue_struct(Queue *q){
    NodePtr t=q->headPtr;
    if(t){
     int value= t->data;
-       /*Finish dequeue */
     q->headPtr = t->nextPtr ;
     if(q->size == 1) q->tailPtr = NULL;
-    free(t);
     q->size--; 
+    free(t);
     return value;
    }
    printf("Empty queue\n");
