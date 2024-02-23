@@ -30,7 +30,7 @@ int main(int argc , char **argv) {
     if(strcmp(argv[i],"x")==0) {
       x = dequeue_struct(&q);
       if(q.size!=0)
-      printf("dequeue %d\n",x);
+      printf("dequeuing %d\n",x);
       }
     else enqueue_struct(&q,atoi(argv[i]));
   }
